@@ -30,9 +30,8 @@ func Hello(name string) (string, error) {
 // randomFormat is not exported, since func name starts with lowercase letter (can only be used by functions within its own module)
 func RandomFormat() string {
 	// A slice of messge formats.
-	var formats []string
 
-	formats = []string{
+	formats := []string{
 		"Hi, %v. Welcome!",
 		"Great to see you, %v",
 		"Hail, %v! Well met!",
