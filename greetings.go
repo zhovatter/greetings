@@ -21,16 +21,17 @@ func Hello(name string) (string, error) {
 	// := initalizes and assigns, and is shortcut for:
 	//var message string
 	//message = fmt.Sprintf("Hi, %v. Welcome!", name)
-	message := fmt.Sprintf(randomFormat(), name)
+	message := fmt.Sprintf(RandomFormat(), name)
 	return message, nil //nil represents the lack of an error
 }
 
 // randomFormat returns one of a set of greeting messages. The returned
 // message is selected at random
 // randomFormat is not exported, since func name starts with lowercase letter (can only be used by functions within its own module)
-func randomFormat() string {
+func RandomFormat() string {
 	// A slice of messge formats.
 	var formats []string
+
 	formats = []string{
 		"Hi, %v. Welcome!",
 		"Great to see you, %v",
