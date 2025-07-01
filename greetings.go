@@ -22,6 +22,7 @@ func Hello(name string) (string, error) {
 	//var message string
 	//message = fmt.Sprintf("Hi, %v. Welcome!", name)
 	message := fmt.Sprintf(randomFormat(), name)
+	//message := fmt.Sprint(randomFormat()) //testing if tests work when name param is not given
 	return message, nil //nil represents the lack of an error
 }
 
